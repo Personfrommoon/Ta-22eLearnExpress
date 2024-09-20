@@ -1,0 +1,30 @@
+{% extends "partials/layout.njk" %}
+{% block title %}Posts{% endblock %}
+{% block content %}
+        <div class="mb-3">  
+            <label for="title" class="form-label"><b>ID</b></label>
+            <p>{{post.id}}</p>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <label for="title" class="form-label"><b>Title</b></label>
+            <p>{{post.title}}</p>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <label for="title" class="form-label"><b>Content</b></label>
+            <p>{{post.body}}</p>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <label for="title" class="form-label"><b>Created At</b></label>
+            <p>{{post.createdAt}}</p>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <label for="title" class="form-label"><b>Updated At</b></label>
+            <p>{{post.updatedAt}}</p>
+        </div>
+        <hr>
+        <input type="submit" class="btn btn-primary" value="Back" onclick="window.history.go(-1); return false;">
+{% endblock %}
